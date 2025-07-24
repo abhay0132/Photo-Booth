@@ -1,0 +1,120 @@
+/* CameraSetup.css */
+
+.camera-setup-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#fef6e4, #f8ede3);
+  height: 100vh;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.video-wrapper {
+  border: 10px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #000;
+}
+
+.video-feed {
+  width: 480px;
+  height: 480px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.filter-btn, .selected-filter {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e3e3e3;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.selected-filter {
+  background-color: #4b4b4b;
+  color: white;
+  font-weight: bold;
+}
+
+.continue-btn {
+  margin-top: 20px;
+  padding: 10px 30px;
+  font-size: 16px;
+  background-color: #2a9d8f;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.continue-btn:hover {
+  background-color: #21867a;
+}
+
+/* Center everything */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(#fffaf0, #ffe5d9);
+  position: relative;
+  font-family: Arial, sans-serif;
+}
+
+/* Center the camera */
+.camera {
+  position: relative;
+  border: 5px solid white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Camera feed */
+.video-feed {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Countdown and Smile Texts */
+.countdown-text,
+.smile-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff4d4d, #ff9999);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  z-index: 5;
+}
+

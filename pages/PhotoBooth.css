@@ -1,0 +1,122 @@
+/* PhotoBooth.css */
+
+.photo-booth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(#fffaf0, #ffe5d9);
+  height: 100vh;
+  padding: 20px;
+  font-family: "Arial", sans-serif;
+}
+
+h2 {
+  margin: 10px 0;
+  font-size: 24px;
+}
+
+.camera-area {
+  border: 10px solid #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background: #000;
+  margin-top: 20px;
+}
+
+.photo-video {
+  width: 480px;
+  height: 480px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.countdown {
+  font-size: 80px;
+  color: #ff4d4d;
+  font-weight: bold;
+  animation: pop 0.5s ease-in-out;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.3);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.countdown {
+  font-size: 100px;
+  color: red;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.smile-text {
+  font-size: 60px;
+  color: #4caf50;
+  font-weight: bold;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.camera {
+  position: relative;
+  border: 5px solid white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px #333;
+}
+
+.video-feed {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.countdown-text {
+  font-size: 64px;
+  font-weight: bold;
+  color: white;
+  margin-top: 20px;
+}
+
+.smile-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #4caf50;
+  margin-top: 10px;
+}
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.reset-btn:hover {
+  background-color: #d32f2f;
+}

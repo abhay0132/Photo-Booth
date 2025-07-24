@@ -9,7 +9,6 @@ const PhotoBooth = () => {
   const [countdown, setCountdown] = useState(null);
   const [showMessage, setShowMessage] = useState("");
 
-  // ✅ Get filter from localStorage synchronously
   const savedFilter = useRef(localStorage.getItem("selectedFilter") || "none");
 
   const startCamera = () => {
